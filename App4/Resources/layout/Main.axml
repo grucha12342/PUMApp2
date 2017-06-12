@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Licznik:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/counterText"
+            android:hint="Liczba kliknięć" />
+        <Button
+            android:text="Kliknij mnie!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/counterButton" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:hint="Imię" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surnameText"
+            android:hint="Nazwisko" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urlText"
+            android:hint="URL to image" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Pobierz"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/downloadButton"
+                android:layout_marginRight="39.5dp"
+                android:layout_marginLeft="64.0dp" />
+            <Button
+                android:text="Anuluj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonCancel"
+                android:layout_gravity="center"
+                android:layout_marginLeft="44.5dp"
+                android:layout_marginRight="53.0dp" />
+        </LinearLayout>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:max="100"
+            android:progress="0"
+            android:indeterminateBehavior="repeat" />
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+</ScrollView>
